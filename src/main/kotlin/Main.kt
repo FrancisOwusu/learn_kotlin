@@ -1,28 +1,32 @@
+import java.awt.SystemTray
+
 fun main(args: Array<String>) {
+    val collectionController = CollectionController()
+    collectionController.mapsCollections()
+    collectionController.setCollections()
+    collectionController.listCollections()
+
+    //exercise 1,count two sets
+    val greenNumbers = listOf(1, 4, 23)
+    val redNumbers = listOf(17, 2)
+    val totalCount = greenNumbers.count() + redNumbers.count()
+    println(totalCount)
+
+    //exercise 2,
+    val SUPPORTED = setOf("HTTP", "HTTPS", "FTP")
+    val requested = "smtp"
+    val isSupported =  requested.uppercase() in SUPPORTED
+    println("Support for $requested: $isSupported")
+
     //display variable types
-    variableTypes();
+    variableTypes()
 
-    println("Hello World!")
-    val popcorn = 5    // There are 5 boxes of popcorn
-    val hotdog = 7     // There are 7 hotdogs
-    var customers = 8
-    var customer1 = 10 // There are 10 customers in the queue
-    val customer2 = 10
-    println("There are $customers customers")
-    // There are 10 customers
 
-    println("There are ${customers + 1} customers")
-    // There are 11 customers
-    // Some customers leave the queue
-
-    println(customer1)
-    println(customer2)
-    println(customers);
     // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
     println("Program arguments: ${args.joinToString()}")
 }
-fun variableTypes(){ // Variable declared without initialization
+
+fun variableTypes() { // Variable declared without initialization
     val d: Int
     // Variable initialized
     d = 3
@@ -38,21 +42,20 @@ fun variableTypes(){ // Variable declared without initialization
     // Variables can be read because they have been initialized
     println(d) // 3
     println(e)
- //hello
+    //hello
+    println("Hello World!")
+    val popcorn = 5    // There are 5 boxes of popcorn
+    val hotdog = 7     // There are 7 hotdogs
+    var customers = 8
+    var customer1 = 10 // There are 10 customers in the queue
+    val customer2 = 10
+    println("There are $customers customers")
+    // There are 10 customers
+
+    println("There are ${customers + 1} customers")
+
+    println(customer1)
+    println(customer2)
+    println(customers)
 }
 
-fun listCollections(){
-    // Read only list
-    val readOnlyShapes = listOf("triangle", "square", "circle")
-    println(readOnlyShapes)
-    // [triangle, square, circle]
-
-    // Mutable list with explicit type declaration
-    val shapes: MutableList<String> = mutableListOf("triangle", "square", "circle")
-    println(shapes);
-// [triangle, square, circle]
- }
-fun setCollections(){}
-fun mapsCollections(){
-
-}
