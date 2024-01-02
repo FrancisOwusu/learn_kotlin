@@ -1,25 +1,27 @@
 import java.awt.SystemTray
 
 fun main(args: Array<String>) {
-    val collectionController = CollectionController()
-    collectionController.mapsCollections()
-    collectionController.setCollections()
-    collectionController.listCollections()
+    val ctrlFlow = ControlFlow();
 
-    //exercise 1,count two sets
-    val greenNumbers = listOf(1, 4, 23)
-    val redNumbers = listOf(17, 2)
-    val totalCount = greenNumbers.count() + redNumbers.count()
-    println(totalCount)
-
-    //exercise 2,
-    val SUPPORTED = setOf("HTTP", "HTTPS", "FTP")
-    val requested = "smtp"
-    val isSupported =  requested.uppercase() in SUPPORTED
-    println("Support for $requested: $isSupported")
+//    val collectionController = CollectionController()
+//    collectionController.mapsCollections()
+//    collectionController.setCollections()
+//    collectionController.listCollections()
+//
+//    //exercise 1,count two sets
+//    val greenNumbers = listOf(1, 4, 23)
+//    val redNumbers = listOf(17, 2)
+//    val totalCount = greenNumbers.count() + redNumbers.count()
+//    println(totalCount)
+//
+//    //exercise 2,
+//    val SUPPORTED = setOf("HTTP", "HTTPS", "FTP")
+//    val requested = "smtp"
+//    val isSupported =  requested.uppercase() in SUPPORTED
+//    println("Support for $requested: $isSupported")
 
     //display variable types
-    variableTypes()
+//    variableTypes()
 
 
     // Try adding program arguments via Run/Debug configuration.
