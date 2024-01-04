@@ -1,11 +1,18 @@
 import java.awt.SystemTray
 
 fun main(args: Array<String>) {
-    val ctrlFlow = ControlFlow();
+    val fnc=Functions()
+
+  /*  val ctrlFlow = ControlFlow();
     println(ctrlFlow.ex1());
     println(ctrlFlow.ex2());
     println(ctrlFlow.ex3());
     println(ctrlFlow.ex4());
+    */
+
+
+
+
 //    val collectionController = CollectionController()
 //    collectionController.mapsCollections()
 //    collectionController.setCollections()
